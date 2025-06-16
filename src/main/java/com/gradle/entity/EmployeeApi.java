@@ -1,4 +1,4 @@
-package com.gradle.DemoProjectWithGradle;
+package com.gradle.entity;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
