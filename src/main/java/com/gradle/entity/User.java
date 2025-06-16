@@ -1,4 +1,4 @@
-package com.gradle.DemoProjectWithGradle;
+package com.gradle.entity;
 
 public class User {
     private int userId;
