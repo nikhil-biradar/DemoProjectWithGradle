@@ -10,11 +10,15 @@ public class User {
   
     @Id
     private int userId;
+  
     private String userName;
 
     @Email
     @Column(unique = true)
     private String email;
+
+    private String address
+
     private double salary;
     private int age;
     private String password;
