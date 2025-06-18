@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
 
+import java.util.List;
+
 @Entity
 public class User {
   
@@ -16,8 +18,14 @@ public class User {
     @Column(unique = true)
     private String email;
 
+
+
+
     private String address;
     private double salary;
     private int age;
     private String password;
+
+    @Column(columnDefinition = "enum('ADMIN', 'USER')")
+    private String role;
 }
