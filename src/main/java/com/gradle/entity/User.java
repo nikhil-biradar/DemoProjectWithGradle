@@ -17,10 +17,6 @@ public class User {
     @Email
     @Column(unique = true)
     private String email;
-
-
-
-
     private String address;
     private double salary;
     private int age;
