@@ -1,11 +1,20 @@
 package com.gradle.entity;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
+
 @Entity
 public class User {
   
     @Id
     private int userId;
     private String userName;
+
+    @Email
+    @Column(unique = true)
+    private String email;
     private double salary;
     private int age;
     private String password;
