@@ -10,7 +10,6 @@ public class User {
   
     @Id
     private int userId;
-  
     private String userName;
 
     @Email
@@ -18,7 +17,6 @@ public class User {
     private String email;
 
     private String address
-
     private double salary;
     private int age;
     private String password;
