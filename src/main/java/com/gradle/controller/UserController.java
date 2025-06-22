@@ -12,16 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/user")
 public class UserController {
-
     private static UserService userService;
-
-
     @GetMapping("/hello")
     public String hello() {
         return "Hello World";
     }
-
-    @GetMapping("/{id}")public ResponseEntity<User>  getById(@PathVariable int id) {
+    @GetMapping("/{id}")public ResponseEntity<User> getById(@PathVariable int id) {
         User user = userService.findUserById(id);
         if (user != null) {
             return ResponseEntity.ok(user);
