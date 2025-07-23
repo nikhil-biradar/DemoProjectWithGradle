@@ -7,7 +7,7 @@ import jakarta.validation.constraints.Email;
 
 @Entity
 public class User {
-  
+
     @Id
     private int userId;
     private String userName;
