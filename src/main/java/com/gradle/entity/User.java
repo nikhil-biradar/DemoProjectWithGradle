@@ -9,7 +9,7 @@ import java.util.List;
 
 @Entity
 public class User {
-  
+
     @Id
     private int userId;
     private String userName;
