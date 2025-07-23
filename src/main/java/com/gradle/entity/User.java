@@ -9,9 +9,11 @@ import java.util.List;
 
 @Entity
 public class User {
+
     @Id
     private int userId;
     private String userName;
+
     @Email
     @Column(unique = true)
     private String email;
