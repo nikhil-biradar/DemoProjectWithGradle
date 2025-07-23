@@ -21,6 +21,7 @@ public class User {
     private double salary;
     private int age;
     private String password;
+    private String name;
 
     @Column(columnDefinition = "enum('ADMIN', 'USER')")
     private String role;
